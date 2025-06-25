@@ -1,0 +1,44 @@
+{
+  "palette": {
+    "mode": "light",
+    "primary": {
+      "main": "#32a852"
+    },
+    "secondary": {
+      "main": "#305c3b"
+    },
+    "text": {
+      "primary": "#222222",
+      "secondary": "#555555"
+    }
+  },
+  "shape": {
+    "borderRadius": 10
+  },
+  "typography": {
+    "fontSize": 14,
+    "fontWeightRegular": 400,
+    "fontWeightMedium": 500,
+    "fontWeightBold": 700,
+    "h1": {
+      "fontSize": "2.5rem",
+      "fontWeight": 700
+    },
+    "h2": {
+      "fontSize": "2rem",
+      "fontWeight": 700
+    },
+    "h3": {
+      "fontSize": "1.75rem",
+      "fontWeight": 700
+    },
+    "body1": {
+      "fontSize": "1rem",
+      "fontWeight": 400
+    },
+    "body2": {
+      "fontSize": "0.875rem",
+      "fontWeight": 400
+    }
+  }
+}
