@@ -1,10 +1,11 @@
 import { useParams } from '@tanstack/react-router'
 import { Card, CardContent, Typography } from '@mui/material'
 import { usePokemonList } from '../../hooks/usePokemonList'
+import { VoteButton } from '../../components/Vote/VoteButton'
 
 const Detail = () => {
 const { name } = useParams({ from: '/pokemon/$name' })
-  const { data, isLoading } = usePokemonList()
+  const { data, isLoading } = usePokemonList(20) //sayıyı değiştir cache patlasın.
 
   if (isLoading) return <p>Yükleniyor...</p>
 console.log(data, 'sssss', name);
@@ -22,6 +23,8 @@ console.log(data, 'sssss', name);
           <Typography>Ağırlık: {pokemon.weight}</Typography>
           <Typography>Boy: {pokemon.height}</Typography>
           <Typography>Tipler: {pokemon.types.map(t => t.type.name).join(', ')}</Typography>
+                    <VoteButton pokemonName={pokemon.name} />
+          
         </CardContent>
       </Card>
     </div>

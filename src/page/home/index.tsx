@@ -3,7 +3,7 @@ import { PokemonCard } from "../../components/Card/PokemonCard"
 import { usePokemonList } from "../../hooks/usePokemonList"
 
 const Home = () => {
- const { data, isLoading, error } = usePokemonList(100)
+ const { data, isLoading, error } = usePokemonList(20)
 
   if (isLoading) return <p>Yükleniyor...</p>
   if (error) return <p>Hata oluştu.</p>

@@ -7,7 +7,8 @@ import type { Pokemon } from '../../types'
 
 
 
-export function PokemonCard({ pokemon }: { pokemon: Pokemon }) {  const isFavoriteAtomInstance = useMemo(() => isFavoriteAtom(pokemon.name), [pokemon.name])
+export function PokemonCard({ pokemon }: { pokemon: Pokemon }) {  
+  const isFavoriteAtomInstance = useMemo(() => isFavoriteAtom(pokemon.name), [pokemon.name])
   const isFavorite = useAtomValue(isFavoriteAtomInstance)
   const [, toggleFavorite] = useAtom(toggleFavoriteAtom)
 

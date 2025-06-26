@@ -14,9 +14,6 @@ export const Route = createRootRoute({
             <Button color="inherit" component={Link} to="/">
               Home
             </Button>
-            <Button color="inherit" component={Link} to="/pokelist">
-              Pokelist
-            </Button>
             <Button color="inherit" component={Link} to="/favorites">
               Favorites
             </Button>

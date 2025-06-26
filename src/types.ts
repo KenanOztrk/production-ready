@@ -15,3 +15,9 @@ export interface Pokemon {
   }
   types: PokemonType[]
 }
+
+export type VotePayload = {
+  pokemonName: string
+  vote: 'up' | 'down'
+}
+
